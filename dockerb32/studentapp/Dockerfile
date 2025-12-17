@@ -1,4 +1,4 @@
-FROM ubuntu:22.0.4
+FROM ubuntu:22.04
 LABEL name="devops_enggr"
 RUN apt-get update && \
     apt-get install unzip openjdk-11-jdk -y
