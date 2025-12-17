@@ -8,7 +8,7 @@ WORKDIR /opt
 RUN unzip apache-tomcat-9.0.113.zip && \
     rm apache-tomcat-9.0.113.zip
 
-ADD https://s3-us-west-2.amazonaws.com/studentapi-cit/Student.war /opt/apache-tomcat-9.0.113/webapps/
+ADD https://s3-us-west-2.amazonaws.com/studentapi-cit/student.war /opt/apache-tomcat-9.0.113/webapps/
 
 ADD https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar /opt/apache-tomcat-9.0.113/lib/
 
