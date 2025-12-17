@@ -9,7 +9,9 @@ RUN unzip apache-tomcat-9.0.113.zip && \
     rm apache-tomcat-9.0.113.zip
 
 ADD https://s3-us-west-2.amazonaws.com/studentapi-cit/Student.war /opt/apache-tomcat-9.0.113/webapps/
+
 ADD https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar /opt/apache-tomcat-9.0.113/lib/
+
 COPY context.xml /opt/apache-tomcat-9.0.113/conf/
 
 EXPOSE 8080
